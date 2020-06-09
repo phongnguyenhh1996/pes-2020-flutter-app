@@ -26,19 +26,16 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(this.title)
-      ),
-      body: Container(
-        color: Color.fromRGBO(214, 205, 221, 1),
-        child: ListView.builder(
-          itemCount: players.length,
-          itemBuilder: (context, index) {
-            return PlayerItem(item:players[index]);
-          },
-        ),
-      )
-    );
+        appBar: AppBar(title: Text(this.title)),
+        body: Container(
+          color: Color.fromRGBO(214, 205, 221, 1),
+          child: ListView.builder(
+            itemCount: players.length,
+            itemBuilder: (context, index) {
+              return PlayerItem(item: players[index]);
+            },
+          ),
+        ));
   }
 }
 
@@ -63,10 +60,9 @@ class PlayerItem extends StatelessWidget {
             child: Text(
               this.item.position,
               style: TextStyle(
-                color: Player.getColors(item.position),
-                fontWeight: FontWeight.bold,
-                fontSize: 15
-              ),
+                  color: Player.getColors(item.position),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15),
             ),
           ),
           Expanded(
@@ -75,10 +71,9 @@ class PlayerItem extends StatelessWidget {
               child: Text(
                 this.item.name,
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17,
-                  color: Colors.black.withOpacity(0.8)
-                ),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                    color: Colors.black.withOpacity(0.8)),
               ),
             ),
           ),
@@ -122,174 +117,30 @@ class Player {
 
   static List<Player> getPlayers() {
     List<Player> players = <Player>[];
-    players.add(
-      Player(
-        'M. PERIN',
-        'GK',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'C. PINSOGLIO',
-        'GK',
-        72
-      )
-    );
-    players.add(
-      Player(
-        'D. RUGANI',
-        'CB',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'M. DE SCIGLIO',
-        'RB',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'L. SPINAZZOLA',
-        'LB',
-        81
-      )
-    );
-    players.add(
-      Player(
-        'A. RAMSEY',
-        'CMF',
-        85
-      )
-    );
-    players.add(
-      Player(
-        'S. KHEDIRA',
-        'CMF',
-        82
-      )
-    );
-    players.add(
-      Player(
-        'E. CAN',
-        'CMF',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'J. CUADRADO',
-        'RMF',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'DOUGLASCOSTA',
-        'RWF',
-        85
-      )
-    );
-    players.add(
-      Player(
-        'BERNARDES',
-        'RWF',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'M. KEAN',
-        'CF',
-        77
-      )
-    );
-    players.add(
-      Player(
-        'M. PERIN',
-        'GK',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'C. PINSOGLIO',
-        'GK',
-        72
-      )
-    );
-    players.add(
-      Player(
-        'D. RUGANI',
-        'CB',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'M. DE SCIGLIO',
-        'RB',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'L. SPINAZZOLA',
-        'LB',
-        81
-      )
-    );
-    players.add(
-      Player(
-        'A. RAMSEY',
-        'CMF',
-        85
-      )
-    );
-    players.add(
-      Player(
-        'S. KHEDIRA',
-        'CMF',
-        82
-      )
-    );
-    players.add(
-      Player(
-        'E. CAN',
-        'CMF',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'J. CUADRADO',
-        'RMF',
-        83
-      )
-    );
-    players.add(
-      Player(
-        'DOUGLASCOSTA',
-        'RWF',
-        85
-      )
-    );
-    players.add(
-      Player(
-        'BERNARDES',
-        'RWF',
-        84
-      )
-    );
-    players.add(
-      Player(
-        'M. KEAN',
-        'CF',
-        77
-      )
-    );
+    players.add(Player('M. PERIN', 'GK', 84));
+    players.add(Player('C. PINSOGLIO', 'GK', 72));
+    players.add(Player('D. RUGANI', 'CB', 83));
+    players.add(Player('M. DE SCIGLIO', 'RB', 84));
+    players.add(Player('L. SPINAZZOLA', 'LB', 81));
+    players.add(Player('A. RAMSEY', 'CMF', 85));
+    players.add(Player('S. KHEDIRA', 'CMF', 82));
+    players.add(Player('E. CAN', 'CMF', 83));
+    players.add(Player('J. CUADRADO', 'RMF', 83));
+    players.add(Player('DOUGLASCOSTA', 'RWF', 85));
+    players.add(Player('BERNARDES', 'RWF', 84));
+    players.add(Player('M. KEAN', 'CF', 77));
+    players.add(Player('M. PERIN', 'GK', 84));
+    players.add(Player('C. PINSOGLIO', 'GK', 72));
+    players.add(Player('D. RUGANI', 'CB', 83));
+    players.add(Player('M. DE SCIGLIO', 'RB', 84));
+    players.add(Player('L. SPINAZZOLA', 'LB', 81));
+    players.add(Player('A. RAMSEY', 'CMF', 85));
+    players.add(Player('S. KHEDIRA', 'CMF', 82));
+    players.add(Player('E. CAN', 'CMF', 83));
+    players.add(Player('J. CUADRADO', 'RMF', 83));
+    players.add(Player('DOUGLASCOSTA', 'RWF', 85));
+    players.add(Player('BERNARDES', 'RWF', 84));
+    players.add(Player('M. KEAN', 'CF', 77));
     return players;
   }
 }
