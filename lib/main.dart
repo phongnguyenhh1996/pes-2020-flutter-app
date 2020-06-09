@@ -117,30 +117,31 @@ class Player {
 
   static List<Player> getPlayers() {
     List<Player> players = <Player>[];
-    players.add(Player('M. PERIN', 'GK', 84));
-    players.add(Player('C. PINSOGLIO', 'GK', 72));
-    players.add(Player('D. RUGANI', 'CB', 83));
-    players.add(Player('M. DE SCIGLIO', 'RB', 84));
-    players.add(Player('L. SPINAZZOLA', 'LB', 81));
-    players.add(Player('A. RAMSEY', 'CMF', 85));
-    players.add(Player('S. KHEDIRA', 'CMF', 82));
-    players.add(Player('E. CAN', 'CMF', 83));
-    players.add(Player('J. CUADRADO', 'RMF', 83));
-    players.add(Player('DOUGLASCOSTA', 'RWF', 85));
-    players.add(Player('BERNARDES', 'RWF', 84));
-    players.add(Player('M. KEAN', 'CF', 77));
-    players.add(Player('M. PERIN', 'GK', 84));
-    players.add(Player('C. PINSOGLIO', 'GK', 72));
-    players.add(Player('D. RUGANI', 'CB', 83));
-    players.add(Player('M. DE SCIGLIO', 'RB', 84));
-    players.add(Player('L. SPINAZZOLA', 'LB', 81));
-    players.add(Player('A. RAMSEY', 'CMF', 85));
-    players.add(Player('S. KHEDIRA', 'CMF', 82));
-    players.add(Player('E. CAN', 'CMF', 83));
-    players.add(Player('J. CUADRADO', 'RMF', 83));
-    players.add(Player('DOUGLASCOSTA', 'RWF', 85));
-    players.add(Player('BERNARDES', 'RWF', 84));
-    players.add(Player('M. KEAN', 'CF', 77));
+    players
+      ..add(Player('M. PERIN', 'GK', 84))
+      ..add(Player('C. PINSOGLIO', 'GK', 72))
+      ..add(Player('D. RUGANI', 'CB', 83))
+      ..add(Player('M. DE SCIGLIO', 'RB', 84))
+      ..add(Player('L. SPINAZZOLA', 'LB', 81))
+      ..add(Player('A. RAMSEY', 'CMF', 85))
+      ..add(Player('S. KHEDIRA', 'CMF', 82))
+      ..add(Player('E. CAN', 'CMF', 83))
+      ..add(Player('J. CUADRADO', 'RMF', 83))
+      ..add(Player('DOUGLASCOSTA', 'RWF', 85))
+      ..add(Player('BERNARDES', 'RWF', 84))
+      ..add(Player('M. KEAN', 'CF', 77))
+      ..add(Player('M. PERIN', 'GK', 84))
+      ..add(Player('C. PINSOGLIO', 'GK', 72))
+      ..add(Player('D. RUGANI', 'CB', 83))
+      ..add(Player('M. DE SCIGLIO', 'RB', 84))
+      ..add(Player('L. SPINAZZOLA', 'LB', 81))
+      ..add(Player('A. RAMSEY', 'CMF', 85))
+      ..add(Player('S. KHEDIRA', 'CMF', 82))
+      ..add(Player('E. CAN', 'CMF', 83))
+      ..add(Player('J. CUADRADO', 'RMF', 83))
+      ..add(Player('DOUGLASCOSTA', 'RWF', 85))
+      ..add(Player('BERNARDES', 'RWF', 84))
+      ..add(Player('M. KEAN', 'CF', 77));
     return players;
   }
 }
